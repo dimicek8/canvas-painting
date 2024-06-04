@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-button button {
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-button button:hover {
+    background-color: darkgrey;
+}
+
+.container-button button:active {
+    scale: 0.9;
+}
+
+@media (max-width: 600px) {
+
+    .container-button {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container-button button {
+        width: 80%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
